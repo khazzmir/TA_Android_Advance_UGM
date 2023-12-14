@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signup_page"
+    android:background="#75a9ff"
+    android:padding="20dp">
+
+
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="140dp"
+        android:layout_height="134dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        android:id="@+id/logo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_image"
+        android:layout_alignBottom="@id/logo_image"
+        android:layout_marginBottom="-61dp"
+        android:text="welcome"
+        android:textColor="#03045e"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/slogan_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_name"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="4dp"
+        android:text="sign up for being cool like me"
+        android:textColor="#03045e"
+        android:textSize="17sp"
+        android:transitionName="slogan_text" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/slogan_name"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:layout_marginBottom="-60dp"
+        android:background="@drawable/bgform"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:textColorHint="#CEE8FF"
+            app:boxStrokeColor="#CEE8FF"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/namalengkap" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            app:counterEnabled="true"
+            android:transitionName="username"
+            app:counterMaxLength="15"
+            android:textColorHint="#CEE8FF"
+            app:boxStrokeColor="#CEE8FF"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/panggilan"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textColorHint="#CEE8FF"
+            app:boxStrokeColor="#CEE8FF"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/emailpengguna"
+                android:inputType="textEmailAddress"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:textColorHint="#CEE8FF"
+            app:boxStrokeColor="#CEE8FF"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/nomorhp"
+                android:inputType="number"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColorHint="#CEE8FF"
+            app:boxStrokeColor="#CEE8FF"
+            app:passwordToggleEnabled="true"
+            android:transitionName="password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/pw"
+                android:inputType="textPassword"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/sg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GO"
+            android:onClick="signup"
+            android:textColor="#381E07"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:transitionName="bt"
+            android:backgroundTint="#75a9ff"/>
+
+        <Button
+            android:id="@+id/lg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:onClick="login"
+            android:text="already have an account? Login"
+            android:textColor="#B1EBFF"
+            android:transitionName="lgsg"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

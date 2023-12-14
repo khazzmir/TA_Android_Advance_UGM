@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="YourTextInputStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <!-- Text color when the input is not focused -->
+        <item name="android:textColorHint">#153f65</item>
+
+        <!-- Text color when the input is focused -->
+        <item name="colorControlActivated">#153f65</item>
+
+        <!-- Text color of the input text -->
+        <item name="android:textColor">#153f65</item>
+    </style>
+
+</resources>

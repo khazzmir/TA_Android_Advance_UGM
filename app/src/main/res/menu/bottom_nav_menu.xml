@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_favorite"
+        android:icon="@drawable/baseline_favorite_24"
+        android:title="Favorite" />
+
+    <item
+        android:id="@+id/fab"
+        android:enabled="true"
+        android:title="" />
+    <item
+        android:id="@+id/menu_history"
+        android:icon="@drawable/baseline_history_24"
+        android:title="History" />
+
+</menu>
